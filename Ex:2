@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+void find(){
+    for(int i=1000;i<=2000;i++){
+        if(i%8==0 and i%5==0 || i%5==5){
+            cout<<i<<" "<<endl;
+        }
+    }
+}
+
+int main(){
+find();
+    return 0;
+}
