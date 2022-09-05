@@ -1,0 +1,28 @@
+1) #include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    int a,b;
+    cin>>n;
+    cin>>a>>b;
+    if(n==1){
+        cout<<"Addition of 2 numbers is "<< a+b <<endl;
+    }
+    else if(n==2){
+        cout<<"Subtraction of 2 numbers is "<< a-b << endl;
+    }
+    else if(n==3){
+        cout<<"Multiplication of 2 numbers is "<< a*b << endl;
+    }
+    else if(n==4){
+        cout<<"Division of 2 numbers is " << a/b <<endl;;
+    }
+    else if(n==5){
+        cout<<"Modulus of 2 numbers is " << a%b << endl;
+    }
+
+
+    return 0;
+}
+
