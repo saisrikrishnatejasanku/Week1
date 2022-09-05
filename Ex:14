@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a,b;
+    cin>>a>>b;
+    int sum= a+b;
+    if(sum>105 and sum<200){
+        cout<<"200"<<endl;
+    }
+    else cout<<sum;
+    return 0;
+}
