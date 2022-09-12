@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int i, amount; 
+    int arr[9] = {500,233,43,10,5,60,30,45,65,100,120};
+    
+    
+    cout << "Enter the amount: ";
+    cin >> amount;
+    
+   
+    for (i = 0; i < 9; i++){
+        cout << arr[i] << " Note: " << amount / arr[i] << endl;
+        amount = amount % arr[i];
+    }
+    return 0;
+}
