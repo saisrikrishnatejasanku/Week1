@@ -1,0 +1,15 @@
+# include <iostream>
+using namespace std ;
+class Student {
+    public :
+    string Name ;
+    int roll_no ;
+};
+int main () {
+    Student StudentObj;
+    StudentObj.Name = "John" ;
+    StudentObj.roll_no = 2;
+    cout << StudentObj.Name << "\n";
+    cout << StudentObj.roll_no ;
+    return 0 ;
+}
