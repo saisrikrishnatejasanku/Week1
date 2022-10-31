@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+class rational{
+ int numer;
+ int denom;
+ public:
+ void getdata(){
+ cout<<"\n Enter the numerator part of the rational no. : ";
+ cin>>numer;
+ cout<<"\n Enter the denominator part of the rational no. : ";
+ cin>>denom;
+ }
+ void operator+(rational);
+ void operator-(rational);
+};
+void rational ::operator+(rational c1){
+ rational temp;
+ temp.numer=(numer*c1.denom)+(c1.numer*denom);
+ temp.denom=denom*c1.denom;
+ cout<<"\nRational no. after addition : ";
+ cout<<"\n Numerator = "<<temp.numer<<"\n Denominator = "<<temp.denom;
+}
+void rational ::operator -(rational c1){
+ rational temp;
+ temp.numer=(numer*c1.denom)-(c1.numer*denom);
+ temp.denom=denom*c1.denom;
+ cout<<"\n Rational no. after subtraction : ";
+ cout<<"\n Numerator = " <<temp.numer<<"\n Denominator = "<<temp.denom;
+}
+int main(){
+ rational c1, c2;
+ int n;
+  cout<<endl<<"\n Enter the data for first rational no.: ";
+ c1.getdata();
+ cout<<endl<<"\n Enter the data for second rational no. : ";
+ c2.getdata ();
+ c1+c2;
+ c1-c2;
+ return 0;
+}
